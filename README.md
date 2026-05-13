@@ -30,7 +30,7 @@ A simple and responsive shopping cart website built using HTML, CSS, and JavaScr
 
 <video src="https://github.com/user-attachments/assets/72da9847-13e0-4506-b7a4-ae31cec734e3" width="100%" controls align="center">
 </video>
----
+
 <p align="center">
   Built with 💜 by <b>Mohammed Baydoun</b>|2026 🎮
 </p>
