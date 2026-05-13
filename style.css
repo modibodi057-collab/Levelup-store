@@ -1,0 +1,432 @@
+/* =========================================
+   1. الإعدادات العامة والمتغيرات
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --primary-color: #8a2be2; /* أرجواني هادئ */
+    --accent-color: #00ffcc;  /* لون نيون للتمييز */
+    --bg-dark: #0f0f12;       /* خلفية داكنة جداً */
+    --text-light: #ffffff;
+    --section-bg: #1a1a2e;    /* خلفية للأقسام */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-light);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-dark);
+    scroll-behavior:smooth;
+}
+
+/* =========================================
+   2. الهيدر ومنطقة التنقل - Navigation
+   ========================================= */
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid var(--primary-color);
+    padding: 15px 0;
+    position: sticky; /* لجعل القائمة تتبعك عند التمرير */
+    top: 0;
+    z-index: 1000;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--accent-color);
+}
+
+.main-header {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("photo/Header\ Background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.band-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4em;
+    margin: 10px 0;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+}
+
+/* =========================================
+   3. الأزرار - Buttons Style
+   ========================================= */
+button {
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 12px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.4s;
+    margin: 10px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-dark);
+    box-shadow: 0 0 25px var(--accent-color);
+    transform: scale(1.05);
+}
+
+/* =========================================
+   4. المحتوى الرئيسي - Main Content
+   ========================================= */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    font-family: 'Orbitron', sans-serif;
+    text-align: left;
+    font-size: 2.2em;
+    color: var(--text-light);
+    margin-bottom: 35px;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 15px;
+    display: block;
+}
+
+.about-band-image {
+    float: left;
+    width: 280px;
+    height: auto;
+    margin: 0 30px 20px 0;
+    border-radius: 15px;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.1em;
+    color: #cccccc;
+}
+/* =========================================
+   5. التذييل (Footer)
+   ========================================= */
+.main-footer {
+    background-color: var(--section-bg);
+    padding: 40px 0;
+    margin-top: 80px;
+    border-top: 2px solid var(--primary-color);
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-nav { list-style: none; display: flex; padding: 0; }
+.footer-nav li { margin-left: 20px; }
+.footer-nav img { width: 35px; transition: 0.3s;border-radius: 5px; }
+.footer-nav img:hover { transform: scale(1.2); filter: drop-shadow(0 0 8px var(--accent-color)); }
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* لتنظيف الـ Float */
+.content-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* =========================================
+   1. الأزرار (Buttons)
+   ========================================= */
+.btn {
+    text-align: center;
+    padding: 0.8em 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.4s;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-dark);
+    box-shadow: 0 0 20px var(--accent-color);
+}
+
+/* =========================================
+   2. تنسيق الإصدارات (Tour/Store Rows)
+   ========================================= */
+.tour-row {
+    border-bottom: 1px solid var(--row-border);
+    padding: 1.5em 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* لضمان توزيع العناصر بالعرض كاملاً */
+}
+
+.tour-row:hover { background-color: rgba(255, 255, 255, 0.05); }
+
+.tour-date { color: var(--primary-color); width: 15%; font-family: 'Orbitron'; }
+.tour-city { width: 25%; font-weight: bold; }
+.tour-arena { width: 40%; color: #aaa; }
+
+
+
+/* --- تنسيق قسم المنتجات (Shop Items) --- */
+.section-header {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: var(--accent-color);
+    margin: 40px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shop-item {
+    margin: 20px;
+    background: var(--section-bg);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--row-border);
+    transition: 0.3s;
+    text-align: center;
+    width: 400px;
+}
+
+.shop-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-family: 'Orbitron';
+}
+
+.shop-item-image {
+    height: 180px;
+    width: 250px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.shop-item-price {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* --- تنسيق سلة المشتريات (Cart Section) --- */
+.cart-header {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--text-light);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+    border-bottom: 1px solid var(--row-border);
+}
+
+.cart-item { width: 45%; }
+.cart-price { width: 20%; color: var(--accent-color); font-family: 'Orbitron'; }
+.cart-quantity { width: 35%; }
+
+.cart-item-title {
+    margin-left: 15px;
+    font-size: 1.1em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart-quantity-input {
+    height: 35px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    background-color: #111;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.btn-danger {
+    background-color: #eb4d4b;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    font-size: 0.8em;
+}
+
+.btn-danger:hover {
+    background-color: #ff7675;
+    box-shadow: 0 0 10px #eb4d4b;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.cart-total-title {
+    font-size: 1.5em;
+    font-family: 'Orbitron';
+}
+
+.cart-total-price {
+    font-size: 1.2em;
+    color: var(--accent-color);
+    margin-left: 10px;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 20px auto;
+    font-size: 1.5em;
+    padding: 15px 40px;
+}
+
+
+.glitch-text {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #ff00ff, -2px -2px #00ffcc;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+.hero-desc {
+    color: #00ffcc;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.about-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.stat-box {
+    border-left: 2px solid #ff00ff;
+    padding-left: 15px;
+    text-align: left;
+}
+.stat-number {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.stat-label {
+    color: #00ffcc;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+
+.booking-modal {
+    position: fixed; /* يجعلها ثابتة بالنسبة للشاشة وليس الصفحة */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* خلفية سوداء شفافة */
+    display: flex;
+    align-items: center; /* توسيط عمودي */
+    justify-content: center; /* توسيط أفقي */
+    z-index: 99999; /* رقم كبير جداً لضمان ظهورها فوق الـ Footer */
+    backdrop-filter: blur(10px); /* تأثير تغبيش للخلفية */
+}
+
+.modal-content {
+    background: #000;
+    border: 2px solid #00ffcc;
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 0 30px #00ffcc;
+    border-radius: 10px;
+}

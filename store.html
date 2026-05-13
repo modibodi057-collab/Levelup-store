@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header">
+
+        <nav class="nav main-nav">
+            <ul class="band-name band-name-large">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <h1>LevelUp Store</h1>
+
+        <button type="button"  class="btn-explore">Explore New Gaming Gear</button>
+
+        <br>
+
+        <button type="button" class="btn-play">&#9658;</button>
+
+    </header>
+
+    <section class="container content-section" id="store-section">
+        <h2 class="section-header" id="products-target">MUSIC & GAMES</h2>
+        <div class="shop-items">
+            <!-- المنتج الأول -->
+            <div class="shop-item">
+                <span class="shop-item-title">Cyber Album</span>
+                <img class="shop-item-image" src="photo/Album 1.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            
+            <!-- المنتج الثاني -->
+            <div class="shop-item">
+                <span class="shop-item-title">Neon Beats</span>
+                <img class="shop-item-image" src="photo/head.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$14.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Level up Gear</span>
+                <img class="shop-item-image" src="photo/key.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$129.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+             <div class="shop-item">
+                <span class="shop-item-title">pro Gamer shirt</span>
+                <img class="shop-item-image" src="photo/Shirt.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container content-section">
+        <h2 class="section-header">YOUR CART</h2>
+        
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        
+        <div class="cart-items">
+            <!-- مثال لعنصر في السلة -->
+          <!--  <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="Images/Shirt.png" width="100">
+                    <span class="cart-item-title">Pro Gamer Shirt</span>
+                </div>
+                <span class="cart-price cart-column">$19.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>-->
+        </div>
+
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE NOW</button>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">LevelUp Store</h3>
+
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="photo/yt.png" alt="youTube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="photo/in.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="photo/fk.png" alt="Facebook">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
