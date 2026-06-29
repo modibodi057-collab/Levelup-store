@@ -143,7 +143,7 @@ if (playBtn) {
                 <button id="close-vid" style="position: absolute; top: -40px; right: 0; background: none; color: #00ffcc; border: 1px solid #00ffcc; padding: 5px 10px; cursor: pointer; font-family: sans-serif;">CLOSE [X]</button>
                 <div style="padding-top: 56.25%; position: relative;">
                     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-                        src="http://www.youtube.com/watch?v=Tbw3w0RA0WU" 
+                        src="https://www.youtube.com/embed/1EgJaT5BYWM?autoplay=1&mute=1&loop=1&playlist=1EgJaT5BYWM&controls=0" 
                         frameborder="0" 
                         allow="autoplay; encrypted-media" 
                         allowfullscreen>
